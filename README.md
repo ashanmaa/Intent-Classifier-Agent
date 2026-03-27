@@ -35,18 +35,16 @@ Instead of just generating answers, it helps users communicate better.
 
 ## 🧠 Example
 
-**Input**
+**Input**:
+
 I feel really overwhelmed lately
 
-**Output**
+**Output**:
+
 {
-
 "intent": "EMOTIONAL_SUPPORT",
-
 "confidence": 0.95,
-
 "suggested_response": "hey… I’m here for you, you’re not alone in this"
-
 }
 
 ## 🧩 Key Features
