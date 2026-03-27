@@ -1,76 +1,79 @@
-# Intent-Classifier-Agent
-People often misread intent in text conversations, leading to responses that are logically correct but emotionally wrong. This is not just an AI that answers, it helps people communicate better.
+# Intent Classifier Agent
 
-# 🧠 Intent Classifier Agent
-An AI-powered communication assistant that helps users respond better by understanding intent behind messages.
+Most people reply with logic when empathy is needed.
+
+This project is built to fix that.
+
+An AI-powered communication assistant that helps users respond appropriately by understanding the intent behind messages.
 
 ## 🚀 Live Demo
 🔗 https://intent-classifier-agent-790917605301.europe-west1.run.app
 
-## 💡 Problem
-People often misread intent in text conversations, leading to responses that are logically correct but emotionally wrong. Most people default to giving solutions, even when emotional support is needed.
+## 💡 The Problem
 
-## ✨ Solution
-This project introduces a Communication Intent Agent that:
-- Classifies user messages into:
-  - EMOTIONAL_SUPPORT
-  - NEEDS_SOLUTION
-  - NEUTRAL
-- Generates a human-like response suggestion
-- Adapts tone and language based on context
-Instead of just generating replies, this system helps users respond appropriately.
+In text conversations, intent is often misread.
 
-## 🧩 Features
-- Intent classification (3 categories)
-- Confidence scoring (0–1)
-- Human-like response suggestion
-- Language adaptation (auto-detect)
-- Tone adaptation (empathetic vs practical vs neutral)
-- API-based deployment via Cloud Run
+This leads to responses that are:
+- logically correct  
+- but emotionally wrong  
 
-## ⚙️ Tech Stack
-- Python
-- Google Agent Development Kit (ADK)
-- Gemini 2.5 Flash
-- Google Cloud Run
-- Docker
+People tend to jump into solutions, even when the other person just needs to be heard.
 
-## 🧠 Example Output
+## ✨ The Solution
 
-Input: I feel really overwhelmed lately
-Output:
+This agent analyzes a message and helps you respond the right way.
+
+It:
+- Classifies intent into:
+  - EMOTIONAL_SUPPORT  
+  - NEEDS_SOLUTION  
+  - NEUTRAL  
+- Generates a natural, human-like reply suggestion  
+- Adapts tone and language based on context  
+
+Instead of just generating answers, it helps users communicate better.
+
+## 🧠 Example
+
+**Input**
+I feel really overwhelmed lately
+
+**Output**
 {
 "intent": "EMOTIONAL_SUPPORT",
 "confidence": 0.95,
 "suggested_response": "hey… I’m here for you, you’re not alone in this"
 }
 
-## 🏗️ Architecture
+## 🧩 Key Features
 
-1. User sends message
-2. Agent receives input via HTTP
-3. Gemini processes the message
-4. Intent is classified
-5. Response suggestion is generated
-6. Output returned in JSON
+- Intent classification (3 categories)
+- Confidence scoring (0–1)
+- Human-like response suggestion
+- Language & tone adaptation
+- Real-time API deployment (Cloud Run)
 
-## 🚀 Deployment
+## 🏗️ How It Works
 
-Using Google ADK CLI:
-uvx --from google-adk==1.14.0 \
-adk deploy cloud_run \
-  --project=$PROJECT_ID \
-  --region=europe-west1 \
-  --service_name=intent-classifier-agent \
-  --with_ui \
-  . \
-  -- \
-  --labels=project=intent-classifier \
-  --service-account=$SERVICE_ACCOUNT
+1. User sends a message  
+2. Agent processes input via HTTP  
+3. Gemini analyzes intent  
+4. System classifies the message  
+5. A context-aware response is generated  
+6. Output is returned in structured JSON  
+
+## ⚙️ Tech Stack
+
+- Python  
+- Google ADK  
+- Gemini 2.5 Flash  
+- Cloud Run  
+- Docker  
 
 ## 📸 Demo
 
-
+(Add screenshots here)
 
 ## 👤 Author
+
 Nur Muhamad Abdussalam
