@@ -72,7 +72,12 @@ I feel really overwhelmed lately
 
 ## 📸 Demo
 
-(Add screenshots here)
+<img width="1919" height="1021" alt="image" src="https://github.com/user-attachments/assets/9b578b0f-bec2-419a-83b3-94b641bbacfe" />
+
+<img width="1919" height="1019" alt="image" src="https://github.com/user-attachments/assets/0522f74a-0db8-450e-9de0-77ca4819f4a6" />
+
+<img width="1919" height="1022" alt="image" src="https://github.com/user-attachments/assets/3c1efe46-2d99-47d8-b24d-2a5771330c41" />
+
 
 ## 👤 Author
 
