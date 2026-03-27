@@ -85,7 +85,7 @@ Respond ONLY in JSON:
 }
 
 USER MESSAGE:
-{ INPUT }
+{input}
 """
 )
 
