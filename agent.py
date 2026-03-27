@@ -77,15 +77,12 @@ BAD example:
 GOOD example:
 "hey… I’m here for you, you’re not alone in this"
 
-Respond ONLY in JSON:
+Respond ONLY in JSON format:
 {
   "intent": "...",
   "confidence": ...,
   "suggested_response": "..."
 }
-
-USER MESSAGE:
-{input}
 """
 )
 
